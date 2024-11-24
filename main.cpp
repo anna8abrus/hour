@@ -1,12 +1,15 @@
 #include <iostream>
 
 int main() {
+     // values init
      int DAY{24};
      int currentHour{0};
      int remainHour{0};
      int endHour{0};
      int reste{0};
 
+
+     // program
      std::cout << "Heure actuelle : ";
      std::cin >> currentHour;
 
@@ -14,6 +17,8 @@ int main() {
 
      std::cout << "Heure restantes : ";
      std::cin >> remainHour;
+
+     // maths
 
      endHour = currentHour + remainHour;
 
@@ -32,8 +37,12 @@ int main() {
      } else if (endHour <= 24) {
           std::cout << "Heure de fin : " << endHour << "H\n" << std::endl;
      }
+     
+     // exit slow
+
      int i;
      std::cout << "0 to exit" << std::endl;
      std::cin >> i;
+     
      return 0;
 }
